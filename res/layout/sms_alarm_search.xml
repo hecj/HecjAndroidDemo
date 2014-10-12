@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/sms_alarm_search_top"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/title_bg"
+        >
+	<include layout="@layout/title_bar"/>        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/sms_alarm_search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/sms_alarm_search_top">
+    </ListView>
+
+</RelativeLayout>

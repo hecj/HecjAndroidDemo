@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hecj.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    <!-- 旋转权限 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hecj_icon"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="com.hecj.demo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hecj.demo.test.TestActivity" android:label="@string/com_hecj_demo_testActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hecj.demo.changebackground.ChangeBackgroundActivity"
+             android:label="@string/com_hecj_demo_changeBackground_changeBackgroundtActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hecj.demo.changebackground.RotateSampleActivity" 
+            android:label="@string/com_hecj_demo_changeBackground_rotateSampleActivity"
+            android:configChanges="orientation">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hecj.demo.viewstub.DeLayLoadActivity" 
+            android:label="@string/com_hecj_demo_viewstub_deLayLoadActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.hecj.demo.animation.AnimationActivity" 
+            android:label="@string/com_hecj_demo_animation_animationActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        
+        <!-- 闹钟部分 -->
+        <activity android:name="com.hecj.demo.alarm.AlarmActivity" 
+            android:label="@string/com_hecj_demo_alarm_alarmActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hecj.demo.alarm.ClockActivity" 
+            >
+        </activity>
+        
+         <!--短信闹钟 -->
+        <activity android:name="com.hecj.demo.sms.activity.SmsAlarmActivity" 
+            android:label="@string/com_hecj_demo_smsalarm_smsAlarmActivity"
+            android:theme="@style/NoTitleBar">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hecj.demo.sms.activity.SmsAlarmSetContent"/>
+        <activity android:name="com.hecj.demo.sms.activity.SmsAlarmSearchActivity"  android:theme="@style/NoTitleBar"/>
+        
+        <receiver android:name="com.hecj.demo.alarm.AlarmReceiver" android:exported="false">
+            <intent-filter >
+                <action android:name="com.hecj.demo.alarm.alarmReceiver"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hecj.demo.sms.reciver.SmsReciver">
+            <intent-filter>
+                <action android:name="com.hecj.demo.sms.reciver.smsReciver"/>
+            </intent-filter>
+        </receiver>
+        
+        
+        
+        <activity android:name="com.hecj.demo.viewpager.ViewPagerActivity" 
+            android:label="@string/com_hecj_demo_viewpager_viewPagerActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.hecj.demo"/>
+            </intent-filter>
+        </activity>
+        
+
+      </application>
+
+</manifest>

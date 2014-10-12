@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HecjAndroidDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="com_hecj_demo_testActivity">测试Activity</string>
+    <string name="com_hecj_demo_changeBackground_changeBackgroundtActivity">换肤/换肤2</string>
+    <string name="com_hecj_demo_changeBackground_rotateSampleActivity">换肤/屏幕反转</string>
+    <string name="com_hecj_demo_viewstub_deLayLoadActivity">延迟加载_ViewStub/delayload</string>
+    <string name="com_hecj_demo_animation_animationActivity">动画/Animation</string>
+    <string name="com_hecj_demo_alarm_alarmActivity">闹钟</string>
+    <string name="com_hecj_demo_smsalarm_smsAlarmActivity">短信闹钟</string>
+    <string name="com_hecj_demo_viewpager_viewPagerActivity">ViewPager</string>
+
+</resources>
